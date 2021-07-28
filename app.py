@@ -9,7 +9,7 @@ cors = CORS(app, resource={r'/*':{'origins': '*'}})
 
 @app.route('/', methods=['GET'])
 def olamundo():
-    return {'ola': 'mundo'}
+    return '<h1>Hello WOrld!</h1>'
 
 @app.route('/user', methods=['POST'])
 def createUser():
