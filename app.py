@@ -11,12 +11,12 @@ cors = CORS(app, resource={r'/*':{'origins': '*'}})
 def index():
     return '<h1>Hello WOrld!</h1>'
 
-@app.route('/user', methods=['POST'])
+@app.route('/user', methods=['GET'])
 def createUser():
 
-    body = request.get_json()
-    print(body)
-    return body
+    #body = request.get_json()
+
+    return {'aa': 'safasf'}
 
 
 def main():
